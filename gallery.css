@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(galimg.jpg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 1.5px solid rgba(255, 255, 25, 0.18);
+}
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+.navbar ul li.active a{
+    color: #7cf03d;
+}
+.navbar ul li:hover{
+    color: #7cf03d;
+}
+.container{
+    margin: 100px 0 0 200px;
+    width: 80%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    left: 500;
+}
+.container img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid wheat;
+    transition: all ease-in-out 0.5s;
+}
+.container img:hover{
+    width: 50%;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    border: 5px solid transparent;
+    padding-block: 20px;
+    margin-block: 20px;
+    box-shadow: 0 0 20px violet, 
+                0 0 25px violet;
+    border-radius: 50%;
+    margin-right: 80px;
+    margin-left: 80px;
+}

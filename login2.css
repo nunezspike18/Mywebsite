@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    background-image: url(Acer_Wallpaper_05_3840x2400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+section{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+section span{
+    position: relative;
+    display: block;
+    width: calc(6.25vw 2px);
+    height: calc(6.25vw 2px);
+    background: #181818;
+    z-index: 2;
+
+}
+section .signin{
+    position: absolute;
+    width: 400px;
+    background: #222;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+section .signin .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+section .signin .content h2{
+    font-size: 2em;
+    color: rgb(253, 253, 253);
+    text-transform: uppercase;
+}
+section .signin .content .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+section .signin .content .form .inputbx{
+    position: relative;
+    width: 100%;
+}
+section .signin .content .form .inputbx input{
+    position: relative;
+    width: 100%;
+    background: #2f3a62;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+section .signin .content .form .inputbx i{
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-size: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.signin .content .form .inputbx input:focus ~ i,
+.signin .content .form .inputbx input:valid ~ i
+{
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #fff;
+}
+.signin .content .form .links{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.signin .content .form .links a{
+    color: #fff;
+    text-decoration: none;
+}
+.signin .content .form .links a:nth-child(2){
+    color: rgb(253, 253, 253);
+    font-weight: 600;
+}
+.signin .content .form .inputbx input[type="submit"]{
+    padding: 10px;
+    background: rgb(253, 253, 253);
+    color: #111;
+    font-weight: 600;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+section .signin{
+    position: absolute;
+    width: 400px;
+    background: transparent;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+.wrapper span{
+    position: fixed;
+    bottom: -180px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    background-color: #18191f;
+    box-shadow: 0 0 50px #002aff,
+                 0 0 100px #002aff,
+                 0 0 150px #002aff,
+                 0 0 200px #002aff;
+    animation: animate 10s linear infinite;
+}
+.wrapper span:nth-child(1){
+    left: 60px;
+    animation-delay: 0.6s;
+}
+.wrapper span:nth-child(2){
+    left: 10%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+}
+.wrapper span:nth-child(3){
+    left: 20%;
+    animation-delay: 2s;
+}
+.wrapper span:nth-child(4){
+    left: 30%;
+    animation-delay: 5s;
+    width: 80px;
+    height: 80px;
+}
+.wrapper span:nth-child(5){
+    left: 40%;
+    animation-delay: 1s;
+}
+.wrapper span:nth-child(6){
+    left: 50%;
+    animation-delay: 7s;
+}
+.wrapper span:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;
+    width: 100px;
+    height: 100px;
+}
+.wrapper span:nth-child(8){
+    left: 70%;
+    animation-delay: 8s;
+}
+.wrapper span:nth-child(9){
+    left: 80%;
+    animation-delay: 6s;
+    width: 90px;
+    height: 90px;
+}
+.wrapper span:nth-child(10){
+    left: 90%;
+    animation-delay: 4s;
+}
+.wrapper span:nth-child(11){
+    left: 100%;
+    animation-delay: 7s;
+}
+.wrapper span:nth-child(12){
+    left: 80%;
+    animation-delay: 4s;
+    width: 100px;
+    height: 100px;
+}
+.wrapper span:nth-child(13){
+    left: 35%;
+    animation-delay: 6s;
+}
+.wrapper span:nth-child(14){
+    left: 60%;
+    animation-delay: 8s;
+    width: 90px;
+    height: 90px;
+}
+.wrapper span:nth-child(15){
+    left: 500%;
+    animation-delay: 4s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+        opacity: .7;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
